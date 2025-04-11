@@ -45,9 +45,11 @@ contract DonateCrypto {
         require(campaign.active == true, "The campaign you are trying to withdraw is no longer active");
         require(campaign.balance > fee, "This campaign does not have enough balance");
 
-        address payable recipient = payable(campaign.author);
-        recipient.call{value: campaign.balance - fee}("");
+        uint256 amountToWithdraw = campaign.balance - fee;
+        (bool success, ) = payable(campaign.author).call{value: amountToWithdraw}("");
 
+        require(success, "Failed to withdraw");
+        
         campaigns[id].active = false;
     }
 }

@@ -156,18 +156,18 @@
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": false,
+			"enabled": true,
 			"runs": 200
 		},
 		"remappings": []
 	},
 	"sources": {
 		"contracts/DonateCrypto.sol": {
-			"keccak256": "0x6d2ad779905641b3755db205d246860c82b9c9a6ca005f1f8a76f0236baa0c4a",
+			"keccak256": "0xc9b26e3429cd7b0bd77d3c8741abb33174349d0a8e7960ed492f8ee3b3a51217",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0a749ddc9cda5fe2d274adc39abb937f9d6386515e6883c7b1b769d98fa28641",
-				"dweb:/ipfs/QmbtMmTLdUaciaVLto6NLpFYH8nnspivyQcoLcZEBukysz"
+				"bzz-raw://2b04cc72aec179fec68928198d4df8e0335fe0dc1a5bb63966a2b2c7cd42f35e",
+				"dweb:/ipfs/QmS7MsrvyriuLfKA8dyxnxyitM7dwZWGi72PBHXK5hEuGe"
 			]
 		}
 	},
